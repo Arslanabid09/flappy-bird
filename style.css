@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+canvas{
+    background: #000;
+    background-image: url('./imgs//flappybirdbg.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
