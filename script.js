@@ -16,7 +16,7 @@ let pipeHeight = 512;
 let topPipeImg = new Image();
 topPipeImg.src = './imgs/toppipe.png';
 let bottomPipeImg = new Image();
-bottomPipeImg.src = './imgs/bottompipe.png';
+    bottomPipeImg.src = './imgs/bottompipe.png';
 let pipeArr = [];
 let pipeGap = 200;
 let pipeSpeed = -2;
@@ -24,7 +24,7 @@ let pipeSpeed = -2;
 let isGameOver = false;
 
 // Create initial pipe
-// createPipe(); 
+createPipe(); 
 
 function createPipe() {
     // Top pipe
