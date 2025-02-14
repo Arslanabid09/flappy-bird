@@ -18,7 +18,7 @@ topPipeImg.src = '/imgs/topPipe.png';
 let bottomPipeImg = new Image();
 bottomPipeImg.src = '/imgs/bottomPipe.png';
 let pipeArr = [];
-let pipeGap = 150;
+let pipeGap = 200;
 let pipeSpeed = -2;
 
 let isGameOver = false;
@@ -30,7 +30,7 @@ function createPipe() {
     // Top pipe
     let topPipeY = Math.random() * (boardHeight / 2); // Random y position for top pipe
     let pipe = {
-        x: boardwidth +2,
+        x: boardwidth +10,
         y: topPipeY - pipeHeight,
         width: pipeWidth,
         height: pipeHeight,
@@ -61,7 +61,7 @@ let bird = {
     yVelocity: 0,
 
     jump: function () {
-        this.yVelocity = -10            ; // Adjust the jump strength
+        this.yVelocity = -9; // Adjust the jump strength
     },
 
     draw: function () {
@@ -86,7 +86,7 @@ window.onload = () => {
     board.width = boardwidth;
     board.height = boardHeight;
     bird.draw();
-    setInterval(createPipe, 2000); // Create a new pipe every 1 second
+    setInterval(createPipe, 2500); // Create a new pipe every 1 second
     requestAnimationFrame(Move); 
 }
 
